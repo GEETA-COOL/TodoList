@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>DTo Do List</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1> Welcome to To do List</h1>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Add a Note</h5>
+                <div>
+                    <textarea name="card_add" id="addtxt" cols="30" rows="10" placeholder="Enter the to do item"></textarea>  <br><br>
+                    <label for="date">Date: </label><input type="date" id="addDate"><br><br>
+                    <label for="time">Time: </label><input type="time" name="time" id="addTime"><br><br>
+                    <label for="category">Add/select category: </label>
+                    <input type="category" id="categoryId" list="categoryList" placeholder="select the Category">
+                    <datalist id="categoryList">
+                        <option value="Personal"></option>
+                        <option value="Work"></option>
+                    </datalist><br><br>
+                    <input type="checkBox" name="pending" id="pendingList"><label for="pendingList"> Pending List</label>
+                </div>
+               <button id="addbtn">Add</button>
+            </div>
+        </div>
+        <hr>
+        <h1>Your List </h1>
+        <hr>
+        <table border="2px" style="text-align: center;"  id="todoTable">
+            <tr >
+                <th>Marked/Completed</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>To do Item</th>
+                <th>
+                    <select name="category" id="categoryFilter">
+                    </select>
+                </th>
+                <th>delete option</th>
+            </tr>
+            
+        </table>
+    </div>
+    <script src="todoList.js"></script>
+
+</body>
+
+</html>

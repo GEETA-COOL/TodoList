@@ -1,0 +1,17 @@
+.strike{
+    text-decoration: line-through;
+    /* color: red; */
+}
+
+#todoTable{
+    text-align: center;
+    padding: 5px;
+}
+
+.row{
+    padding: 5px;
+}
+
+::placeholder{
+    color: darkcyan;
+}
